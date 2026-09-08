@@ -15,11 +15,12 @@ This workspace is configured for **Tech Career AI Suite** comprising 4 unified a
      - **Mục cần xác nhận / Cấm tự ý bổ sung (To Confirm / Strictly Forbidden to Assume)**: Các suy đoán, chức danh gợi ý, số liệu ước tính chưa được ứng viên duyệt. Bắt buộc dùng placeholder `[CẦN XÁC NHẬN: ...]`.
    - Trong `mock-interviewer`: Tuyệt đối không hỏi về công nghệ ngoài CV như một sự thật trong quá khứ. Mọi câu hỏi mở rộng bắt buộc phải gắn thẻ `[Giả định / Hypothetical]`.
 
-3. **4-Skill Architecture & Role Partitioning (Kiến trúc 4 Kỹ Năng)**:
+3. **5-Skill Architecture & Role Partitioning (Kiến trúc 5 Kỹ Năng)**:
    - 🎯 **`cv-reviewer`**: Đánh giá chiến lược, định tuyến ứng viên 2 trục, chấm điểm 5s Recruiter, bắt lỗi P0/P1/P2 và chỉ định vai trò (`Trụ cột`, `Bằng chứng`, `Bổ sung`, `Xóa bỏ`).
    - ✍️ **`cv-experience-refinement`**: Tiếp nhận Handoff Packet để tái cấu trúc từng trải nghiệm thành mô hình chuẩn `1 dòng Tổng quan + 2–4 Bullets chuyên sâu`, tuân thủ 100% Anti-Hallucination.
    - 🎙️ **`mock-interviewer`**: Đóng vai Tech Lead khó tính thực hiện phỏng vấn đối kháng theo cơ chế thích ứng (Adaptive Difficulty 1–5), mô phỏng sự cố Production và đánh giá 3 trục (*Technical Depth, Communication, Problem Solving*).
    - 🏹 **`job-hunter`**: Săn lùng JD mục tiêu qua mọi cổng ATS toàn cầu, bóc tách yêu cầu 4 tầng và phân tích khoảng cách năng lực dựa trên bằng chứng (Evidence-based Matching).
+   - 🌐 **`web-portfolio-builder`**: Thiết kế, xây dựng và tối ưu Web CV / Portfolio tương tác từ Cache JSON, căn chỉnh tỷ lệ in ấn A4 chuẩn mực không rớt trang (Zero-Overflow Print Engine) tuân thủ quy tắc `.agents/rules/web-cv-design.md`.
 
 4. **Minimum Business Closed Loop (Vòng lặp nghiệp vụ đóng kín)**:
    - Mỗi đoạn kinh nghiệm giữ lại cần có cấu trúc:
